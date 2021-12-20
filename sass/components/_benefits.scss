@@ -1,0 +1,49 @@
+.benefits {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--title-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 270px;
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      background-color: var(--benefits-item-color);
+      background-size: 70px 70px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+.benefits__item:nth-child(1)::before {
+  background-image: url(../images/banefis-icon/antenna_1.png);
+}
+
+.benefits__item:nth-child(2)::before {
+  background-image: url(../images/banefis-icon/clock.png);
+}
+
+.benefits__item:nth-child(3)::before {
+  background-image: url(../images/banefis-icon/diagram.png);
+}
+
+.benefits__item:nth-child(4)::before {
+  background-image: url(../images/banefis-icon/astronaut.png);
+}
