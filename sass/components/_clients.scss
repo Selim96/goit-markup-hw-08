@@ -1,9 +1,16 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+  }
 }
 
-.clients__item:not(:last-child) {
+.clients__item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients__link {
@@ -11,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--border-clients-color);
   border-radius: 4px;
@@ -23,6 +30,15 @@
   &:focus {
     border-color: var(--button-color);
     color: var(--button-color);
+  }
+  @media screen and (min-width: 480px) {
+    // width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
