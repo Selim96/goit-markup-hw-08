@@ -28,10 +28,17 @@
         <a class="logo logo--header line-none" href="index.html"
           ><span class="logo__web">Web</span>Studio</a
         >
-        <nav>
-          <ul class="nav no-dots">
+
+        <button type="button" class="menu-button">
+          <svg class="menu-button__icon" width="40" height="40">
+            <use href="./images/social/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav_list no-dots">
             <li class="nav__item">
-              <a class="nav__link  line-none" href="index.html"> Студия </a>
+              <a class="nav__link line-none" href="index.html"> Студия </a>
             </li>
             <li class="nav__item">
               <a class="nav__link link line-none" href="./portfolio.html">
@@ -64,6 +71,69 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="menu is-hidden">
+        <div class="conteiner menu-conteiner">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-btn__icon" width="40" height="40">
+              <use href="./images/social/icons.svg#icon-close_menu"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-menu">
+            <ul class="nav-menu_list no-dots">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link line-none" href="index.html">
+                  Студия
+                </a>
+              </li>
+              <li class="nav-menu__item">
+                <a
+                  class="nav-menu__link link-menu line-none"
+                  href="./portfolio.html"
+                >
+                  Портфолио
+                </a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link line-none" href=""> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="contacts-menu">
+            <ul class="contacts-menu__list no-dots">
+              <li class="contacts-menu__item">
+                <a class="contacts-menu__tel line-none" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-menu__item">
+                <a
+                  class="contacts-menu__mail line-none"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-social no-dots">
+              <li class="menu-social__item">
+                <a class="menu-social__link line-none" href="">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link line-none" href="">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link line-none" href="">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link line-none" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -272,64 +342,66 @@
 
     <footer class="footer">
       <div class="conteiner conteiner--footer">
-        <div class="adress-logo">
-          <a class="logo logo--footer line-none" href="index.html"
-            ><span class="logo__web">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address__list no-dots">
-              <li class="address__item">
-                <a
-                  class="address__link line-none"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+        <div class="footer-logo-social">
+          <div class="adress-logo">
+            <a class="logo logo--footer line-none" href="index.html"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="address__list no-dots">
+                <li class="address__item">
+                  <a
+                    class="address__link line-none"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link line-none" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invitation">
+            <p class="invitation__text">присоединяйтесь</p>
+            <ul class="social__list no-dots">
+              <li class="social__item">
+                <a class="social__link line-none" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use
+                      href="./images/social/icons.svg#icon-instagram-1"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__link line-none" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social__item">
+                <a class="social__link line-none" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use
+                      href="./images/social/icons.svg#icon-twitter-1"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link line-none" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use
+                      href="./images/social/icons.svg#icon-facebook-1"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link line-none" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use
+                      href="./images/social/icons.svg#icon-linkedin-1"
+                    ></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="invitation">
-          <p class="invitation__text">присоединяйтесь</p>
-          <ul class="social__list no-dots">
-            <li class="social__item">
-              <a class="social__link line-none" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use
-                    href="./images/social/icons.svg#icon-instagram-1"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link line-none" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use
-                    href="./images/social/icons.svg#icon-twitter-1"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link line-none" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use
-                    href="./images/social/icons.svg#icon-facebook-1"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link line-none" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use
-                    href="./images/social/icons.svg#icon-linkedin-1"
-                  ></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="footer-form">
@@ -353,5 +425,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
