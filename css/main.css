@@ -472,10 +472,6 @@ body {
   fill: var(--button-color);
 }
 
-.link-menu {
-  color: var(--button-color);
-}
-
 .nav-menu__item {
   font-weight: 500;
   font-size: 40px;
@@ -485,6 +481,45 @@ body {
 
 .nav-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.nav-menu {
+  margin-bottom: auto;
+}
+
+.contacts-menu__item:first-child {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--button-color);
+  margin-bottom: 32px;
+}
+
+.contacts-menu__item:last-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+  margin-bottom: 64px;
+}
+
+.nav-menu__link {
+  color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: var(--button-color);
+}
+
+.link-menu {
+  color: var(--button-color);
 }
 
 .baner {
