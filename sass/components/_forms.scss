@@ -6,6 +6,8 @@
   position: relative;
   @media screen and (min-width: 1200px) {
     width: 570px;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -31,9 +33,16 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @media screen and (min-width: 768px) {
+      max-width: 450px;
+    }
     @media screen and (min-width: 1200px) {
       width: 358px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    align-items: flex-start;
   }
 }
 
