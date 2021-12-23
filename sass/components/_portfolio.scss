@@ -3,16 +3,24 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   // justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
 .radio-btn__item {
+  margin-bottom: 15px;
   margin-right: 8px;
   &:last-child {
     margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -43,8 +51,10 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    margin-right: -30px;
+  }
 }
 
 .products__item {

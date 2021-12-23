@@ -28,6 +28,7 @@
     width: auto;
     justify-content: flex-start;
     align-items: baseline;
+    padding-bottom: 0;
   }
 }
 
@@ -37,6 +38,7 @@
   align-items: center;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -58,6 +60,7 @@
     margin-bottom: 9px;
   }
   @media screen and (min-width: 1200px) {
+    align-items: flex-start;
   }
 }
 
@@ -87,6 +90,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 12px;
+    align-items: flex-start;
   }
 
   &__text {
