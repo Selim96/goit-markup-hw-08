@@ -555,6 +555,7 @@ body {
   position: fixed;
   top: 0;
   padding: 48px 40px;
+  z-index: 3;
 }
 
 .menu-conteiner {
@@ -639,6 +640,7 @@ body {
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -650,12 +652,12 @@ body {
   color: var(--button-color);
 }
 
-.menu-social__item:not(:last-chaild) {
+.menu-social__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.menu-social__item:not(:first-chaild) {
+.menu-social__item:not(:first-child) {
   padding-left: 10px;
 }
 
