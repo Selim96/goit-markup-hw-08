@@ -189,12 +189,22 @@
             <li class="pictures__item">
               <a class="line-none" href=""
                 ><div class="picture__caption">
-                  <img
-                    class="pictures__images"
-                    src="images/index/box_1.jpg"
-                    alt="программист набирает код на компьютере"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/index/box_1.jpg        1x,
+                        ./images/pictures2x/img1_2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      class="pictures__images"
+                      src="images/index/box_1.jpg"
+                      alt="программист набирает код на компьютере"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="pictures__text">десктопные приложения</p>
                 </div></a
               >
@@ -202,12 +212,22 @@
             <li class="pictures__item">
               <a class="line-none" href=""
                 ><div class="picture__caption">
-                  <img
-                    class="pictures__images"
-                    src="images/index/box.2.jpg"
-                    alt="человек держит телефон перед монитоором"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/index/box.2.jpg        1x,
+                        ./images/pictures2x/img2_2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      class="pictures__images"
+                      src="images/index/box.2.jpg"
+                      alt="человек держит телефон перед монитоором"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="pictures__text">Мобильные приложения</p>
                 </div></a
               >
@@ -215,12 +235,22 @@
             <li class="pictures__item">
               <a class="line-none" href=""
                 ><div class="picture__caption">
-                  <img
-                    class="pictures__images"
-                    src="images/index/box.3.jpg"
-                    alt="планшет в руках у человека"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/index/box.3.jpg        1x,
+                        ./images/pictures2x/img3_2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <img
+                      class="pictures__images"
+                      src="images/index/box.3.jpg"
+                      alt="планшет в руках у человека"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="pictures__text">Дизайнерские решения</p>
                 </div></a
               >
@@ -253,7 +283,7 @@
                 <source
                   srcset="
                     ./images/team1x/igor450_1x.jpg 1x,
-                    ./images/team2x/igor450_2x.jpg 2x
+                    ./images/team2x/igor450_2.jpg  2x
                   "
                   media="(min-width:320px)"
                 />
@@ -298,11 +328,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/index/olga-1.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/olga-1.jpg     1x,
+                    ./images/team2x/olga270_2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/olga354_1x.jpg 1x,
+                    ./images/team2x/olga354_2.jpg  2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/olga450_1x.jpg 1x,
+                    ./images/team2x/olga450_2.jpg  2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="images/team2x/olga270_2.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="team__names">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
               <ul class="social__list no-dots">
@@ -341,11 +390,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/index/nikolay-1.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/nikolay-1.jpg 1x,
+                    ./images/team2x/nik270_2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/nik354_1x.jpg 1x,
+                    ./images/team2x/nik354_2.jpg  2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/nik450_1x.jpg 1x,
+                    ./images/team2x/nik450_2.jpg  2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="images/index/nikolay-1.jpg" alt="Николай Тарасов" />
+              </picture>
               <h3 class="team__names">Николай Тарасов</h3>
               <p class="team__profession">Marketing</p>
               <ul class="social__list no-dots">
@@ -384,11 +452,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="images/index/mixa-1.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/mixa-1.jpg     1x,
+                    ./images/team2x/mixa270_2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/mixa354_1x.jpg 1x,
+                    ./images/team2x/mixa354_2.jpg  2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1x/mixa450_1x.jpg 1x,
+                    ./images/team2x/mixa450_2.jpg  2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="images/index/mixa-1.jpg" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="team__names">Михаил Ермаков</h3>
               <p class="team__profession">UI Designer</p>
               <ul class="social__list no-dots">
